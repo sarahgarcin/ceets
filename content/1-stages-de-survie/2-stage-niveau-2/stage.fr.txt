@@ -1,0 +1,45 @@
+Title: Stage Niveau 2
+
+----
+
+Cover: trk_survie_33.jpg
+
+----
+
+Period: 2 jours
+
+----
+
+Cost: 280€
+
+----
+
+Number: 15 max
+
+----
+
+Prerequisite: 
+
+----
+
+Mail: 
+
+----
+
+Files: 
+
+----
+
+Events: 
+
+----
+
+Text: 
+
+----
+
+Actus: oui
+
+----
+
+Descripton: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet aliquet magna, quis rutrum sem. In sollicitudin fermentum magna. Maecenas tempor sapien massa, id dapibus nisl fermentum ac. Maecenas et metus ac erat volutpat lacinia.

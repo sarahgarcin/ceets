@@ -1,0 +1,45 @@
+Title: Formation Intensive 1
+
+----
+
+Cover: trk_survie_45.jpg
+
+----
+
+Period: 
+
+----
+
+Cost: 
+
+----
+
+Number: 
+
+----
+
+Prerequisite: 
+
+----
+
+Mail: 
+
+----
+
+Files: 
+
+----
+
+Events: 
+
+----
+
+Text: 
+
+----
+
+Actus: oui
+
+----
+
+Descripton: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet aliquet magna, quis rutrum sem. In sollicitudin fermentum magna. Maecenas tempor sapien massa, id dapibus nisl fermentum ac. Maecenas et metus ac erat volutpat lacinia.

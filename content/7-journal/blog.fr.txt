@@ -1,0 +1,13 @@
+Title: Journal
+
+----
+
+Cover: trk_survie_02.jpg
+
+----
+
+Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet aliquet magna, quis rutrum sem. In sollicitudin fermentum magna. Maecenas tempor sapien massa, id dapibus nisl fermentum ac. Maecenas et metus ac erat volutpat lacinia.
+
+----
+
+Text: 

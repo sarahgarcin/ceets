@@ -1,4 +1,277 @@
 // I M P O R T
-@import "_foundation.scss";
 @import "_font-awesome.scss";
 @import "_variables.scss";
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	width: 100%;
+	margin:0;
+	font-family: $gimlet;
+	font-size: 12px;
+	background-color: $beige;
+}
+
+img{
+	max-width: 100%;
+	width: 100%;
+}
+
+ul{
+	margin: 0; 
+	li{
+		list-style: none;
+	}
+}
+
+a{
+	text-decoration:none; 
+}
+
+header{
+	width: 100%;
+	.menusecondaire{
+		background-color: $marron;
+		padding: 15px 35px;
+		.menusecondaire-el{
+			display: flex;
+		  justify-content:flex-end;
+		  & ul {
+		    display: flex;
+		    & a {
+		      padding: 1rem 1rem;
+		    }
+		  }
+			li{
+				text-align: right;
+			}
+		}
+		a{
+			text-transform: uppercase;
+			color: $orange;
+			font-size: 12px;
+			text-align: right;
+			font-family: $karla;
+			font-weight:bold;
+			letter-spacing: 1px;
+			&:hover{
+				color: #FFF;
+			}
+		}
+	}
+	.social-network{
+		width: 90%;
+		padding: 15px 35px 0px;
+		a{
+			color: $orange;
+			font-size: 1.5em;
+			&:hover{
+				color: $marron;
+			}
+		}
+	}
+
+	.menu{
+		margin-top: 2em;
+		position:relative;
+		display: flex;
+	  justify-content: center;
+	  & ul {
+	    display: flex;
+	    position:relative;
+	    & a {
+	      padding: 1rem 1rem;
+	    }
+	  }
+		li{
+			text-align:left;
+			&:hover .submenu{
+				display:flex;
+			}
+		}
+		a{
+			color: $marron; 
+			font-size: 21px;
+			font-weight: bold;
+			text-transform:uppercase;
+			font-family: $refractaire;
+			letter-spacing: 1px;
+			&:hover{
+				color: $orange;
+			}
+		}
+		.submenu{
+			position: absolute;
+			background-color: $beige;
+			padding: 1em 4em;
+			z-index: 100;
+			width:100%;
+			display:none;
+			border-left: 1px solid $noir;
+			border-right: 1px solid $noir;
+			border-bottom: 1px solid $noir;
+			.colonne{
+				border-right: 1px solid $noir;
+				padding-left: 2em;
+				padding-right: 2em;
+				&:first-child{
+					padding-left: 0;
+				}
+				&:last-child{
+					border:none;
+					padding-right: 0;
+				}
+			}
+			a{
+				font-family: $karla;
+				font-size: 12px;
+				span{display:block;}
+				span.sub-title{font-weight:bold;}
+				span.sub-period{font-weight:normal;}
+			}
+		}
+	}
+}
+
+.slider{
+	margin-top: 1.5em;
+	margin-bottom: 8px;
+
+	overflow:hidden;
+	.slick-slide{
+		position:relative;
+		height: 300px;
+	}
+	.image-wrapper{
+		&::before {
+    	content:"";
+	    display: block;
+	    height: 100%;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    background-color: rgba(0, 0, 0, .5);
+		}
+	}
+	.description{
+		position: absolute;
+		width: 80%;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: $orange;
+		font-size: 1.5em;
+	}
+	.link{
+		position: absolute;
+		bottom: 10px;
+		left: 50%;
+		transform: translate(-50%, 0);
+		a{
+			color: #FFF;
+			font-family: $karla;
+			text-transform: uppercase;
+			font-size: 12px;
+			letter-spacing: 1px;
+			&:hover{
+				color: $orange;
+			}
+		}
+	}
+	.slick-prev, .slick-next{
+		z-index: 100;
+	}
+	.slick-prev{
+		left: 10px;
+	}
+	.slick-next{
+		right: 10px;
+	}
+}
+
+.showcase{
+	display: flex;
+  flex-flow: row wrap;
+	.showcase-el {
+		position: relative;
+	  flex: auto;
+	  height: 250px;
+	  min-width: 150px;
+	  padding: 0 8px 0 8px; /* Some gutter */
+	  margin: 8px 0 8px 0; /* Some gutter */
+	  overflow:hidden;
+	  &:nth-child(4n+1){
+	     width: 66%;
+	     padding-left:0;
+	  }
+	  &:nth-child(4n+2){
+	    width: 34%;
+	    padding-right:0;
+	     .image-wrapper{
+	     	height:100%;
+			  	img{
+			  		height: 100%;
+			  		width: auto;
+			  		max-width: none;
+			  	}
+		  }
+	  }
+	  &:nth-child(4n+3){
+	    width: 34%;
+	    padding-left:0;
+     	.image-wrapper{
+     		height:100%;
+		  	img{
+		  		height: 100%;
+		  		width: auto;
+		  		max-width: none;
+		  	}
+		  }
+	  }
+	  &:nth-child(4n+4){
+	     width: 66%;
+	     padding-right:0;
+	  }
+	  .title{
+	  	position:absolute;
+	  	background-color: rgba(0, 0, 0, .5);
+	  	top:30px;
+	  	width: auto;
+	  	color: $orange;
+	  	font-family: $refractaire;
+	  	font-size:25px;
+	  	text-transform:uppercase;
+	  	font-weight:normal;
+	  	letter-spacing: 2px;
+	  	padding: 10px 10px 5px 20px;
+	  }
+	  .description{
+	  	position:absolute;
+	  	background-color: rgba(0, 0, 0, .5);
+	  	bottom:0;
+	  	width: 98.5%;
+	  	color: #FFF;
+	  	height: 80px;
+	  	font-size: 12px;
+	  	text-align:left;
+	  	padding: 10px 15px 5px;
+	  	.description-text{
+	  		p{
+	  			margin-top:0;
+	  		}
+	  		margin-bottom: 1em;
+				overflow:hidden;
+	  		text-overflow: ellipsis;
+	  		height: 33px; 
+	  	}
+	  }
+	}
+}
+
+
+
+
+

@@ -1,0 +1,102 @@
+Title: Stage Niveau 1
+
+----
+
+Cover: trk_survie_02.jpg
+
+----
+
+Period: 2 jours
+
+----
+
+Cost: 280 €
+
+----
+
+Number: 14 max
+
+----
+
+Prerequisite: 
+
+Majeurs 
+Certificat médical 
+Niveau 1
+
+----
+
+Mail: secretariat.ceets@gmail.com
+
+----
+
+Files: 
+
+----
+
+Events: 
+
+- 
+  eventtitle: Drôme
+  datestart: 2017-12-16
+  dateend: 2017-12-17
+  link: http://test.com
+- 
+  eventtitle: Drôme
+  datestart: 2018-02-02
+  dateend: 2018-02-03
+  link: http://test.com
+
+----
+
+Text: 
+
+## Objectifs du Stage :
+Ce stage de survie a pour but de faire acquérir les connaissances pratiques et théoriques fondamental- es qui engagent la survie. Ce stage est le condensé de tous les savoirs les plus essentiels pour gérer les risques les plus courants en milieu naturel, tous biotopes confondus. Il est également le tronc commun qui permet d’avoir les bases théoriques et pratiques pour accéder à nos stages avancés.
+Notre défi est de vous de fournir les connaissances les plus utiles et les plus réalistes possibles en deux jours et une nuit de stage .
+À ce niveau, les stagiaires utilisent encore tout leur matériel. Ils apprennent à l’utiliser de manière optimale, et découvrent comment s’en passer. Les purs néophytes y trouveront les bases essentielles pour préparer une rando ou un voyage nature... Les vieux routards y trouveront des outils qui vien- dront démultiplier les bénéfices de leur expérience déjà acquise.
+
+## Programme :
+Le contenu précis du programme peut varier légèrement en fonction des intérêts du groupe, du ter- rain ou de la météo.
+
+**Bases théoriques**
+• Les priorités en survie, définition d’une situation de survie, gestion du risque.
+Stress et gestion du stress
+Premiers secours
+• Savoirs spécifiques aux milieux naturels et éloignés.
+• Attendre et se signaler au secours, la trousse de secours
+régulation thermique
+• Lutter contre le chaud ou le froid, selon la saison,
+• Principes de base, abris de fortune, vêtements
+Feu
+• Législation, méthode pour réussir en toutes conditions, sécuriser. Techniques de bivouac
+L’eau
+• Physiologie de l’hydratation, traitement de l’eau
+hygiène de terrain
+Lecture de carte et orientation
+Le concept « sans trace »
+Couteau
+• Prévention des accidents, utilisation optimale d’un petit couteau à lame fixe. Gestion du sac à dos et du matériel
+Concevoir son propre kit de survie
+(image: trk_survie_22.jpg)
+
+## Difficulté :
+Avec le bon matériel (liste fournie) et une attitude active, les stages ne présentent aucune difficulté physique pour un adulte en bonne santé et avec une condition physique moyenne. Une mauvaise météo peut rendre le stage moins confortable, mais notre but est de vous faire rester au maximum dans votre zone de confort thermique pour que vous puissiez vous concentrer sereinement sur les apprentissag- es.
+
+## Les Stagiaires :
+14 participants maximum Obligatoirement majeurs
+Certificat médical valide
+En bonne santé mentale et physique
+## Encadrement :
+Tous les stages du CEETS sont encadrés par, au minimum, DEUX moniteurs. Là où la réglementation le nécessite (zone montagne), un accompagnateur en montagne diplomé est présent.
+
+## RenseignementS et inscriptions :
+(email: secretariat.ceets@gmail.com text: secretariat.ceets@gmail.com)
+
+----
+
+Descripton: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet ali- quet magna, quis rutrum sem. In sollicitudin fermentum magna. Maecenas tempor sapien massa, id dapibus nisl fermentum ac. Maecenas et metus ac erat volutpat lacinia.
+
+----
+
+Actus: oui

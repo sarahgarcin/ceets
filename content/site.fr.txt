@@ -1,0 +1,38 @@
+Title: CEETS - STAGES DE SURVIE ET DE VIE SAUVAGE
+
+----
+
+Logo: logovectoriel.png
+
+----
+
+Author: Julien Imbert, David Manise, Sarah Garcin
+
+----
+
+Description: 
+
+----
+
+Keywords: 
+
+----
+
+Ogimage: 
+
+----
+
+Socialnetworks: 
+
+- 
+  icon: fa-facebook
+  link: https://fr-fr.facebook.com/ceets.survie/
+- 
+  icon: fa-twitter
+  link: http://twitter.com
+- 
+  icon: fa-instagram
+  link: http://instagram.com
+- 
+  icon: fa-youtube
+  link: http://youtube.com

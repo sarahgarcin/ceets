@@ -1,0 +1,17 @@
+Title: Stages de survie
+
+----
+
+Submenu: 
+
+----
+
+Colonne1: stage-niveau-1, stage-niveau-2, stage-niveau-3
+
+----
+
+Colonne2: stage-fondamentaux
+
+----
+
+Colonne3: formation-intensive-1, formation-intensive-2

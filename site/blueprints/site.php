@@ -1,32 +1,50 @@
 <?php if(!defined('KIRBY')) exit ?>
 
 title: Site
-pages: default
+pages: 
+  template: 
+    - default
+    - menuElement
+    - team
+    - blog
+    - calendar
+
+
 fields:
   siteSettings:
-    label: Site Settings
+    label: Paramètres du site
     type:  headline
   title:
-    label: Title
+    label: Titre
     type:  title
+  logo:
+    label: Logo
+    type: selector
+    mode: single
+    sort: filename
+    autoselect: first
+    required: false
+    types:
+      - image
+    help: Ajouter le logo à afficher dans le header du site
   author:
-    label: Author
+    label: Auteur(s)
     type:  text
   description:
     label: Description
     type:  textarea
   keywords:
-    label: Keywords
+    label: Mots-Clés
     type:  tags
   socialNetworkSettings:
-    label: Social Network Settings
+    label: Paramètres de Réseaux Sociaux
     type:  headline
   ogimage:
-    label: Site Thumbnail
+    label: Thumbnail du Site
     type:  url
-    help:  URL of the thumbnail that will represent your website on the social networks.
+    help:  URL de l'image qui va représenter le site sur les réseaux sociaux
   socialnetworks:
-    label: Your Social Network
+    label: Réseaux Sociaux
     type:  structure
     entry: >
       <span class="fa-stack fa-lg">
@@ -35,13 +53,13 @@ fields:
       </span> {{link}}</i>
     fields:
       icon:
-        label: Icon
+        label: Icône
         type:  text
         width: 1/2
         icon:  share-alt
       link:
-        label: Link
+        label: Lien
         type:  text
         width: 1/2
         icon:  link
-    help: Go on <a href="http://fontawesome.io/icons/" target="_blank">http://fontawesome.io/icons/</a> to find the icon’s name you want to use.
+    help: Aller sur <a href="http://fontawesome.io/icons/" target="_blank">http://fontawesome.io/icons/</a> pour trouver l'icône à utilise.

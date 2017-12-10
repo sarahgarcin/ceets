@@ -1,12 +1,24 @@
 <?php if(!defined('KIRBY')) exit ?>
 
 title: Page
-pages: true
+pages: false
 files: true
 fields:
   title:
-    label: Title
+    label: Titre
     type:  text
+  cover: 
+    label: Image de couverture
+    type: selector
+    mode: single
+    sort: filename
+    autoselect: first
+    types:
+      - image
+  description:
+    label: Description
+    type:  markdown
   text:
-    label: Text
-    type:  textarea
+    label: Texte
+    type:  markdown
+
