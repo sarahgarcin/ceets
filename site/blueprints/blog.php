@@ -2,7 +2,7 @@
 
 title: Journal
 pages: 
-  template: blogElement
+  template: blogelement
   num: date
   sort: flip
 files: true

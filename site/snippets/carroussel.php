@@ -10,7 +10,7 @@
 						<img src="<?php echo $image->url()?>" alt="<?php echo $image->name()?>">
 					</div>
 					<div class="description">
-						<?php echo $stage->descripton()->kt();?>
+						<?php echo $stage->description()->kt();?>
 					</div>
 					<div class="link">
 						<a href="<?php echo $stage->url()?>" title="<?php echo $stage->title()?>">

@@ -2078,15 +2078,61 @@ img {
   width: 100%; }
 
 ul {
-  margin: 0; }
+  margin: 0;
+  -webkit-padding-start: 0px; }
   ul li {
     list-style: none; }
 
+h1 {
+  font-family: "gimlet_narrow", serif;
+  font-size: 3em;
+  color: #fd8a00;
+  font-weight: normal;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em; }
+
+h2 {
+  font-family: "la_refractaire", sans-serif;
+  font-size: 2.5em;
+  color: #fd8a00;
+  font-weight: normal;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+
+h3 {
+  font-family: "karla", sans-serif;
+  font-size: 1em;
+  color: #fd8a00;
+  font-weight: bold;
+  margin-top: 1em;
+  margin-bottom: 0.1em;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+
+p {
+  font-size: 13px;
+  color: #47352f;
+  font-family: "gimlet", serif;
+  line-height: 1.6; }
+
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #47352f; }
+  a:hover {
+    text-decoration: underline; }
+
+figure {
+  margin: 2em 0 1em 0; }
+
+.no-padding {
+  padding: 0; }
 
 header {
   width: 100%; }
+  header a:hover {
+    text-decoration: none; }
   header .menusecondaire {
     background-color: #47352f;
     padding: 15px 35px; }
@@ -2136,8 +2182,11 @@ header {
     header .menu li {
       text-align: left; }
       header .menu li:hover .submenu {
-        display: -ms-flexbox;
-        display: flex; }
+        height: auto;
+        padding: 1em 4em;
+        border-left: 1px solid #292020;
+        border-right: 1px solid #292020;
+        border-bottom: 1px solid #292020; }
     header .menu a {
       color: #47352f;
       font-size: 21px;
@@ -2150,13 +2199,12 @@ header {
     header .menu .submenu {
       position: absolute;
       background-color: #fdf1dd;
-      padding: 1em 4em;
+      padding: 0 4em;
       z-index: 100;
       width: 100%;
-      display: none;
-      border-left: 1px solid #292020;
-      border-right: 1px solid #292020;
-      border-bottom: 1px solid #292020; }
+      overflow: hidden;
+      transition: all 0.5s linear;
+      height: 0; }
       header .menu .submenu .colonne {
         border-right: 1px solid #292020;
         padding-left: 2em;
@@ -2198,9 +2246,11 @@ header {
     top: 50%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    color: #fd8a00;
-    font-size: 1.5em; }
+    transform: translate(-50%, -50%); }
+    .slider .description p {
+      color: #fd8a00;
+      font-size: 1.5em;
+      line-height: 1.4; }
   .slider .link {
     position: absolute;
     bottom: 10px;
@@ -2274,20 +2324,60 @@ header {
       font-weight: normal;
       letter-spacing: 2px;
       padding: 10px 10px 5px 20px; }
+    .showcase .showcase-el:hover .description {
+      bottom: 0px;
+      height: 80px;
+      padding: 10px 15px 5px; }
     .showcase .showcase-el .description {
       position: absolute;
       background-color: rgba(0, 0, 0, 0.5);
-      bottom: 0;
+      bottom: -10px;
       width: 98.5%;
+      height: 0px;
+      transition: all 0.8s ease;
+      padding: 0px 15px 5px;
       color: #FFF;
-      height: 80px;
       font-size: 12px;
-      text-align: left;
-      padding: 10px 15px 5px; }
+      text-align: left; }
       .showcase .showcase-el .description .description-text {
         margin-bottom: 1em;
         overflow: hidden;
         text-overflow: ellipsis;
         height: 33px; }
         .showcase .showcase-el .description .description-text p {
-          margin-top: 0; }
+          margin-top: 0;
+          color: #FFF;
+          font-size: 12px;
+          text-align: left;
+          line-height: 1.4; }
+
+.page-header {
+  margin-top: 1.5em;
+  position: relative; }
+  .page-header .image-wrapper {
+    height: 400px;
+    overflow: hidden;
+    position: relative; }
+    .page-header .image-wrapper img {
+      position: absolute;
+      top: 50%;
+      margin-top: -300px; }
+  .page-header .title-header {
+    background-color: #fdf1dd;
+    position: absolute;
+    bottom: -50px;
+    left: -1.5em;
+    padding: 0em 2em 1em 2em; }
+
+.page-content {
+  background-color: #FFF;
+  margin-top: 50px; }
+
+.inner-infos-text {
+  padding-top: 1.5em; }
+  .inner-infos-text h3 + p {
+    margin-top: 0; }
+  .inner-infos-text .info-el {
+    margin-bottom: 2em; }
+  .inner-infos-text ul {
+    padding: 0; }

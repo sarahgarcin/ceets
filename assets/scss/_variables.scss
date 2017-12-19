@@ -12,3 +12,47 @@ $refractaire: "la_refractaire", sans-serif;
 $karla: "karla", sans-serif;
 $gimlet: "gimlet", serif;
 $gimletNarrow: "gimlet_narrow", serif;
+
+@mixin h1{
+	font-family: $gimletNarrow;
+	font-size: 3em;
+	color: $orange;
+	font-weight: normal;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+
+}
+
+
+@mixin h2{
+	font-family: $refractaire;
+	font-size: 2.5em;
+	color: $orange;
+	font-weight: normal;
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+	letter-spacing: 2px;
+	text-transform:uppercase;
+
+}
+
+@mixin h3{
+	font-family: $karla;
+	font-size: 1em;
+	color: $orange;
+	font-weight: bold;
+	margin-top: 1em;
+	margin-bottom: 0.1em;
+	letter-spacing: 2px;
+	text-transform:uppercase;
+}
+
+@mixin p{
+	font-size: 13px; 
+	color: $marron; 
+	font-family: $gimlet;
+	line-height:1.6;
+}
+
+
+

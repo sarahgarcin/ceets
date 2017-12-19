@@ -95,8 +95,19 @@ Tous les stages du CEETS sont encadrés par, au minimum, DEUX moniteurs. Là o
 
 ----
 
-Descripton: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet ali- quet magna, quis rutrum sem. In sollicitudin fermentum magna. Maecenas tempor sapien massa, id dapibus nisl fermentum ac. Maecenas et metus ac erat volutpat lacinia.
+Description: Avec le bon matériel (liste fournie) et une attitude active, les stages ne présentent aucune difficulté physique pour un adulte en bonne santé et avec une condition physique moyenne. Une mauvaise météo peut rendre le stage moins confortable, mais notre but est de vous faire rester au maximum dans votre zone de confort thermique pour que vous puissiez vous concentrer sereinement sur les apprentissag- es.
 
 ----
 
 Actus: oui
+
+----
+
+Docs: trk_survie_02.jpg
+
+----
+
+Liens: 
+
+- 
+  lien: http://test.com

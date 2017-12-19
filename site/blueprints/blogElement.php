@@ -14,7 +14,7 @@ fields:
     options: 
       edito: Édito
       event: Évènement
-      annonce: Annonce
+      annonce: Compte-rendu de stage
   text:
     label: Texte
     type:  markdown

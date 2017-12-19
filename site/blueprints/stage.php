@@ -23,7 +23,7 @@ fields:
     required: false
     types:
       - image
-  descripton: 
+  description: 
     label: Description
     type: markdown
   period: 
@@ -41,11 +41,18 @@ fields:
   mail: 
     label: Mail pour renseignements
     type: email
-  files: 
+  docs: 
     label: Fichiers d'inscription
     type: selector
     mode: multiple
     sort: filename
+  liens:
+    label: Liens
+    type: structure 
+    fields:
+      lien:
+        label: Lien
+        type: url
   events:
     label: Prochaines dates
     type: structure

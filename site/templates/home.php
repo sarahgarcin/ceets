@@ -7,25 +7,27 @@
 		<div class="showcase">
 			<?php foreach($site->index()->filterBy('intendedTemplate', 'stage')->slice(0,4) as $stage):?>
 				<div class="showcase-el">
-					<div class="title">
-						Survie: <?php echo $stage->title()->html()?>
-					</div>
-					<div class="image-wrapper">
-						<?php $image = $stage->cover()->toFile();?>
-						<img src="<?php echo $image->url()?>" alt="<?php echo $image->name()?>">
-					</div>
-					<div class="description">
-						<div class="description-text">
-							<?php echo $stage->descripton()->kt()?>
+					<a href="<?php echo $stage->url()?>" title="<?php echo $stage->title()?>">
+						<div class="title">
+							Survie: <?php echo $stage->title()->html()?>
 						</div>
-						<div class="infos">
-							<?php echo $stage->period()->html()?> | <?php echo $stage->cost()->html()?>
+						<div class="image-wrapper">
+							<?php $image = $stage->cover()->toFile();?>
+							<img src="<?php echo $image->url()?>" alt="<?php echo $image->name()?>">
 						</div>
-
-					</div>
+						<div class="description">
+							<div class="description-text">
+								<?php echo $stage->description()->kt()?>
+							</div>
+							<div class="infos">
+								<?php echo $stage->period()->html()?> | <?php echo $stage->cost()->html()?>
+							</div>					
+						</div>
+					</a>
 				</div>
 			<?php endforeach;?>
 		</div>
+		<?php snippet('journal') ?>
 	</div>
 	
 </main>

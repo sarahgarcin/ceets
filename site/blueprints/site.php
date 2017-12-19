@@ -4,7 +4,7 @@ title: Site
 pages: 
   template: 
     - default
-    - menuElement
+    - menuelement
     - team
     - blog
     - calendar
