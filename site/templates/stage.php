@@ -6,7 +6,6 @@
 	</div>
 	<div class="page-content start-xs row">
 		<div class="infos col-xs-2 col-xs-offset-2">
-
 			<div class="inner-infos-text">
 				<h3>Infos pratiques<br>—</h3>
 				<div class="info-el">
@@ -31,12 +30,12 @@
 				</div>
 				
 			</div>
-			<div class="document row">
+			<div class="document">
 				<h3>Dossier d'inscription<br>—</h3>
 				<?php if($page->liens()->isNotEmpty()):?>
 					<ul>
 					  <?php foreach($page->liens()->toStructure() as $lien): ?>
-						  <li class="xs-col-2">
+						  <li>
 						  	<a href="<?php echo $lien->lien()?>" title="<?php echo $lien->lien()?>" target="_blank">
 						  		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24.945" height="24.945">
 									  <defs>
@@ -61,7 +60,7 @@
 			    
 			    <ul class="docs">
 				    <?php foreach($files as $file):?>
-				    <li class="xs-col-2">
+				    <li>
 					  	<a href="<?php echo $file->url()?>" title="<?php echo $file->url()?>" target="_blank">	
 								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22.96" height="30.614">
 								  <defs>
@@ -81,8 +80,8 @@
 			<!--  agenda  -->
 			<?php if(!kirby()->request()->ajax()):?>
 				<?php if($page->events()->isNotEmpty()): ?>
-					<h3> Prochaines dates<br>—</h3>
 					<ul class="dates">
+						<h3> Prochaines dates</h3>
 					  <?php foreach($page->events()->toStructure() as $dates): ?>
 					  <li>
 					  	<?php 
@@ -103,9 +102,9 @@
 					    		<h3>Du <?php echo $fromDay ?>/<?php echo $fromMonth ?>/<?php echo $fromYear ?><br> Au <?php echo $toDay ?>/<?php echo $toMonth ?>/<?php echo $toYear ?></h3>
 					    <?php endif; ?>
 					    <p>— <?php echo $dates->eventtitle->html()?></p>
-					    <a href="<?php echo $dates->link()?>" title="S'inscire">
-					    	S'inscire
-					    </a>
+					    <div class="date-link">
+								<a href="<?php echo $dates->link()?>" title="S'inscire" target="_blanks">S'inscire</a>
+					    </div>
 					  </li>
 					  <?php endforeach ?>
 					</ul>
@@ -118,7 +117,16 @@
 				<?php echo $page->text()->kt()?>
 			</div>
 		</div>
+		<div class="page-navigation col-xs-5 col-xs-offset-4">
+			<?php if($page->prev() != null):?>
+				<a href="<?php echo $page->prev()->url()?>" title="<?php echo $page->prev()->title()?>"><		FORMATION PRÉCÉDENTE</a>
+			<?php endif?>
+			<?php if($page->next() != null):?>
+				<a href="<?php echo $page->next()->url()?>" title="<?php echo $page->next()->title()?>">FORMATION SUIVANTE    ></a>
+			<?php endif?>
+		</div>
 	</div>
+
 	
 </main>
 

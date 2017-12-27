@@ -2119,7 +2119,11 @@ p {
 
 a {
   text-decoration: none;
-  color: #47352f; }
+  color: #47352f;
+  font-size: 13px;
+  color: #47352f;
+  font-family: "gimlet", serif;
+  line-height: 1.6; }
   a:hover {
     text-decoration: underline; }
 
@@ -2371,7 +2375,37 @@ header {
 
 .page-content {
   background-color: #FFF;
-  margin-top: 50px; }
+  margin-top: 50px;
+  padding-bottom: 50px; }
+  .page-content .main-text {
+    padding-bottom: 40px; }
+  .page-content .dates {
+    margin-top: 2em; }
+    .page-content .dates h3 + p {
+      margin-top: 0; }
+    .page-content .dates li {
+      margin-top: 1em; }
+      .page-content .dates li:before {
+        content: "—";
+        padding-top: 1em;
+        color: #fd8a00;
+        font-weight: bold; }
+      .page-content .dates li .date-link {
+        margin-top: 1.5em;
+        margin-bottom: 2.5em; }
+        .page-content .dates li .date-link a {
+          padding: 10px;
+          background-color: #47352f;
+          color: #FFF;
+          text-transform: uppercase;
+          font-family: "karla", sans-serif;
+          letter-spacing: 2px;
+          margin-top: 1em;
+          margin-bottom: 1em; }
+          .page-content .dates li .date-link a:hover {
+            color: #FFF;
+            background-color: #fd8a00;
+            text-decoration: none; }
 
 .inner-infos-text {
   padding-top: 1.5em; }
@@ -2379,5 +2413,20 @@ header {
     margin-top: 0; }
   .inner-infos-text .info-el {
     margin-bottom: 2em; }
-  .inner-infos-text ul {
-    padding: 0; }
+
+.document ul {
+  display: inline-block;
+  margin-right: 0.5em;
+  vertical-align: middle; }
+
+.document li {
+  display: inline-block;
+  margin-right: 0.5em;
+  vertical-align: middle; }
+  .document li svg {
+    fill: #47352f; }
+
+.page-navigation {
+  padding-top: 20px;
+  border-top: 1px dotted #000;
+  font-weight: bold; }

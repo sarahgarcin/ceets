@@ -37,7 +37,8 @@ p{
 
 a{
 	text-decoration:none; 
-	color: $marron; 
+	color: $marron;
+	@include p;
 	&:hover{
 		text-decoration:underline; 
 	}
@@ -341,6 +342,45 @@ header{
 .page-content{
 	background-color: #FFF;
 	margin-top: 50px;
+	padding-bottom: 50px;
+	.main-text{
+		padding-bottom: 40px;
+	}
+	.dates{
+		margin-top: 2em;
+		h3 + p{
+			margin-top:0;
+		}
+		li{
+			margin-top: 1em; 
+			&:before{
+				content: "—";
+				padding-top: 1em;
+				color: $orange;
+				font-weight:bold;
+			}
+			.date-link{
+				margin-top: 1.5em;
+				margin-bottom: 2.5em;
+				a{
+					padding:10px;
+					background-color: $marron;
+					color: #FFF;
+					text-transform: uppercase;
+					font-family: $karla;
+					letter-spacing: 2px;
+					margin-top: 1em;
+					margin-bottom: 1em;
+					&:hover{
+						color: #FFF;
+						background-color: $orange;
+						text-decoration:none;
+					}
+				}
+
+			}
+		}
+	}
 }
 
 .inner-infos-text{
@@ -349,11 +389,29 @@ header{
 	.info-el{
 		margin-bottom: 2em;
 	}
+}
+
+.document{
 	ul{
-		padding: 0;
+		display:inline-block;
+		margin-right: 0.5em;
+		vertical-align: middle;
+	}
+	li{
+		display:inline-block;
+		margin-right: 0.5em;
+		vertical-align: middle;
+		svg{
+			fill: $marron;
+		}
 	}
 }
 
+.page-navigation{
+	padding-top: 20px;
+	border-top: 1px dotted #000;
+	font-weight:bold;
+}
 
 
 
