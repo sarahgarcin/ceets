@@ -27,8 +27,8 @@
 				</div>
 			<?php endforeach;?>
 		</div>
-		<?php snippet('journal') ?>
 	</div>
+	<?php snippet('journal') ?>
 	
 </main>
 

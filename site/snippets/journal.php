@@ -1,9 +1,11 @@
 <?php $mois = ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'];?>
 
-<div class="journal start-xs">
+<div class="journal start-xs row">
 	<div class="content"> 
-		<h2 class="col-xs-offset-3"><?php echo $site->index()->find('journal')->title()->html()?></h2>
-		<div class="tags col-xs-offset-3">
+		<?php if($page->uid() != 'journal'):?>
+			<h1 class="col-xs-offset-4"><?php echo $site->index()->find('journal')->title()->html()?></h1>
+		<?php endif ?>
+		<div class="tags col-xs-offset-4 col-xs-5">
 			<h3>Tags</h3>
 				<ul class="no-padding">
 					<li <?php //e(param('tag') == $tag, ' class="active"')?>>
@@ -32,7 +34,7 @@
 				<?php $articles = $articles->paginate(10) ?>
 				<?php foreach($articles as $actu): ?>
 					<li class="row">
-						<div class="infos col-xs-2">
+						<div class="infos col-xs-2 col-xs-offset-2">
 							<?php 
 								$day =  $actu->modified('d');
 				  			$month = $mois[$actu->modified('n') - 1];
@@ -44,16 +46,16 @@
 					    	<span><?php echo $year ?></span>
 					    </div>
 						</div>
-						<div class="main-text col-xs-7 col-xs-offset-1">
+						<div class="main-text col-xs-5">
 							<h2><?php echo $actu->title()->html() ?></h2>
 							<?php if(str::length($actu->text()) > 400): ?>
 								<div class="resume">
-									<?php echo str::excerpt($actu->text()->kirbytext(), 400, TRUE);?>
+									<p><?php echo str::excerpt($actu->text()->kirbytext(), 400, TRUE);?></p>
 								</div>
 								<div class="moretext">
 									<?php echo $actu->text()->kirbytext() ?>
 								</div>
-								<a href="" class="morelink">▼</a>
+								<a href="" class="morelink">Lire la suite  &nbsp  &nbsp▼</a>
 							<?php else: ?>
 								<?php echo $actu->text()->kirbytext() ?>
 							<?php endif ?>

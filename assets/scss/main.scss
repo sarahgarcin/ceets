@@ -78,7 +78,7 @@ header{
 			font-size: 12px;
 			text-align: right;
 			font-family: $karla;
-			font-weight:bold;
+			font-weight:normal;
 			letter-spacing: 1px;
 			&:hover{
 				color: #FFF;
@@ -110,7 +110,8 @@ header{
 	    }
 	  }
 		li{
-			text-align:left;
+			text-align:center;
+			flex-grow: 1;
 			&:hover .submenu{
 				//display:flex;
 				height:auto;
@@ -123,7 +124,7 @@ header{
 		a{
 			color: $marron; 
 			font-size: 21px;
-			font-weight: bold;
+			font-weight: normal;
 			text-transform:uppercase;
 			font-family: $refractaire;
 			letter-spacing: 1px;
@@ -141,6 +142,9 @@ header{
 			//display:none;
 			transition: all 0.5s linear;
 			height:0;
+			li{
+				text-align: left;
+			}
 			.colonne{
 				border-right: 1px solid $noir;
 				padding-left: 2em;
@@ -246,7 +250,7 @@ header{
 	     	height:100%;
 			  	img{
 			  		height: 100%;
-			  		width: auto;
+			  		//width: auto;
 			  		max-width: none;
 			  	}
 		  }
@@ -258,7 +262,7 @@ header{
      		height:100%;
 		  	img{
 		  		height: 100%;
-		  		width: auto;
+		  		//width: auto;
 		  		max-width: none;
 		  	}
 		  }
@@ -314,6 +318,56 @@ header{
 	  		height: 33px; 
 	  	}
 	  }
+	}
+}
+
+.journal{
+	background-color: #FFF;
+	.tags{
+		border-top: 2px dotted $marron;
+		border-bottom: 2px dotted $marron;
+		padding: 10px 0 20px 0;
+		h3{
+			display: inline-block;
+		}
+		ul{
+			display: inline-block;
+			margin-left: 40px;
+		}
+		li{
+			display: inline-block;
+			padding-right: 40px;
+			&:before{
+				content:"▢";
+				margin-right: 5px;
+			}
+		}
+	}
+	.projet-content{
+		margin-bottom: 20px;
+		.infos{
+			padding-top: 42px;
+			padding-bottom: 40px;
+			color: $orange; 
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			font-weight: bold;
+		}
+		.main-text{
+			padding-top: 10px;
+			padding-bottom: 40px;
+			border-bottom: 2px dotted $marron;
+		}
+		.moretext{display:none;}
+		.morelink{
+			display:block;
+			color: $orange;
+			font-family: $karla;
+			text-transform: uppercase;
+			font-weight: bold;
+			letter-spacing: 1px;
+			text-align: right;
+		}
 	}
 }
 
@@ -411,6 +465,79 @@ header{
 	padding-top: 20px;
 	border-top: 1px dotted #000;
 	font-weight:bold;
+}
+
+body[data-template='blog']{
+	.journal{
+		margin-top: 50px;
+		padding-bottom: 50px;
+		.tags{
+			border-top: none;
+		}
+	}
+}
+
+body[data-template='team']{
+	.title-team{
+		border-bottom: 2px dotted $marron;
+		margin-bottom: 40px;
+	}
+	h2{
+		margin-top: 0;
+		margin-bottom: 0px;
+	}
+	p.position{
+		font-weight:bold;
+		margin-top: 0;
+	}
+	.wrap{
+		 background-color: #FFF;
+		.team-content{
+			.team-people{
+				//margin-bottom: 50px;
+				padding-top: 30px;
+				padding-bottom: 30px;
+				&:nth-child(even){
+					background-color: $beige;
+				}
+				&:nth-child(odd) .image-wrapper{
+					margin-left: 25%;
+					
+				}
+			}
+		}
+	}
+}
+
+.calendar{
+	h3{
+		border-bottom: 1px dotted $marron;
+		padding-top: 10px; 
+		padding-bottom:10px;
+	}
+	span{
+		@include h3;
+		color: #000;
+		letter-spacing:0;
+	}
+	.filters{
+		border-bottom: 1px solid #000;
+		padding-bottom: 15px;
+		// padding-left:0;
+		// padding-right:0;
+		> div.row{
+			padding-top: 10px;
+		}
+	}
+	.liste-dates{
+		li{
+			padding: 20px 0px;
+			border-bottom: 1px dotted #000;
+		}
+		.date-wrapper{
+			cursor:pointer;
+		}
+	}
 }
 
 

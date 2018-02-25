@@ -2158,7 +2158,7 @@ header {
       font-size: 12px;
       text-align: right;
       font-family: "karla", sans-serif;
-      font-weight: bold;
+      font-weight: normal;
       letter-spacing: 1px; }
       header .menusecondaire a:hover {
         color: #FFF; }
@@ -2184,7 +2184,9 @@ header {
       header .menu ul a {
         padding: 1rem 1rem; }
     header .menu li {
-      text-align: left; }
+      text-align: center;
+      -ms-flex-positive: 1;
+      flex-grow: 1; }
       header .menu li:hover .submenu {
         height: auto;
         padding: 1em 4em;
@@ -2194,7 +2196,7 @@ header {
     header .menu a {
       color: #47352f;
       font-size: 21px;
-      font-weight: bold;
+      font-weight: normal;
       text-transform: uppercase;
       font-family: "la_refractaire", sans-serif;
       letter-spacing: 1px; }
@@ -2209,6 +2211,8 @@ header {
       overflow: hidden;
       transition: all 0.5s linear;
       height: 0; }
+      header .menu .submenu li {
+        text-align: left; }
       header .menu .submenu .colonne {
         border-right: 1px solid #292020;
         padding-left: 2em;
@@ -2302,7 +2306,6 @@ header {
         height: 100%; }
         .showcase .showcase-el:nth-child(4n+2) .image-wrapper img {
           height: 100%;
-          width: auto;
           max-width: none; }
     .showcase .showcase-el:nth-child(4n+3) {
       width: 34%;
@@ -2311,7 +2314,6 @@ header {
         height: 100%; }
         .showcase .showcase-el:nth-child(4n+3) .image-wrapper img {
           height: 100%;
-          width: auto;
           max-width: none; }
     .showcase .showcase-el:nth-child(4n+4) {
       width: 66%;
@@ -2354,6 +2356,47 @@ header {
           font-size: 12px;
           text-align: left;
           line-height: 1.4; }
+
+.journal {
+  background-color: #FFF; }
+  .journal .tags {
+    border-top: 2px dotted #47352f;
+    border-bottom: 2px dotted #47352f;
+    padding: 10px 0 20px 0; }
+    .journal .tags h3 {
+      display: inline-block; }
+    .journal .tags ul {
+      display: inline-block;
+      margin-left: 40px; }
+    .journal .tags li {
+      display: inline-block;
+      padding-right: 40px; }
+      .journal .tags li:before {
+        content: "▢";
+        margin-right: 5px; }
+  .journal .projet-content {
+    margin-bottom: 20px; }
+    .journal .projet-content .infos {
+      padding-top: 42px;
+      padding-bottom: 40px;
+      color: #fd8a00;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: bold; }
+    .journal .projet-content .main-text {
+      padding-top: 10px;
+      padding-bottom: 40px;
+      border-bottom: 2px dotted #47352f; }
+    .journal .projet-content .moretext {
+      display: none; }
+    .journal .projet-content .morelink {
+      display: block;
+      color: #fd8a00;
+      font-family: "karla", sans-serif;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-align: right; }
 
 .page-header {
   margin-top: 1.5em;
@@ -2430,3 +2473,61 @@ header {
   padding-top: 20px;
   border-top: 1px dotted #000;
   font-weight: bold; }
+
+body[data-template='blog'] .journal {
+  margin-top: 50px;
+  padding-bottom: 50px; }
+  body[data-template='blog'] .journal .tags {
+    border-top: none; }
+
+body[data-template='team'] .title-team {
+  border-bottom: 2px dotted #47352f;
+  margin-bottom: 40px; }
+
+body[data-template='team'] h2 {
+  margin-top: 0;
+  margin-bottom: 0px; }
+
+body[data-template='team'] p.position {
+  font-weight: bold;
+  margin-top: 0; }
+
+body[data-template='team'] .wrap {
+  background-color: #FFF; }
+  body[data-template='team'] .wrap .team-content .team-people {
+    padding-top: 30px;
+    padding-bottom: 30px; }
+    body[data-template='team'] .wrap .team-content .team-people:nth-child(even) {
+      background-color: #fdf1dd; }
+    body[data-template='team'] .wrap .team-content .team-people:nth-child(odd) .image-wrapper {
+      margin-left: 25%; }
+
+.calendar h3 {
+  border-bottom: 1px dotted #47352f;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+.calendar span {
+  font-family: "karla", sans-serif;
+  font-size: 1em;
+  color: #fd8a00;
+  font-weight: bold;
+  margin-top: 1em;
+  margin-bottom: 0.1em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #000;
+  letter-spacing: 0; }
+
+.calendar .filters {
+  border-bottom: 1px solid #000;
+  padding-bottom: 15px; }
+  .calendar .filters > div.row {
+    padding-top: 10px; }
+
+.calendar .liste-dates li {
+  padding: 20px 0px;
+  border-bottom: 1px dotted #000; }
+
+.calendar .liste-dates .date-wrapper {
+  cursor: pointer; }

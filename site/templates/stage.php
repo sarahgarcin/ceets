@@ -1,11 +1,15 @@
-<?php snippet('head') ?>
-<?php snippet('header') ?>
+<?php if(!kirby()->request()->ajax()):
+	snippet('head');
+	snippet('header');
+endif;?>
 <main class="wrap row center-xs">
-	<div class="col-xs-8">
-		<?php snippet('pageheader') ?>
-	</div>
+	<?php if(!kirby()->request()->ajax()):?>
+		<div class="col-xs-8">
+			<?php snippet('pageheader') ?>
+		</div>
+	<?php endif?>
 	<div class="page-content start-xs row">
-		<div class="infos col-xs-2 col-xs-offset-2">
+		<div class="infos col-xs-2 <?php if(!kirby()->request()->ajax()):?>col-xs-offset-2<?php endif?>">
 			<div class="inner-infos-text">
 				<h3>Infos pratiques<br>—</h3>
 				<div class="info-el">
@@ -112,19 +116,21 @@
 			<?php endif; ?>
 			<!--  fin agenda  -->
 		</div>
-		<div class="main-text col-xs-5">
+		<div class="main-text <?php if(!kirby()->request()->ajax()):?>col-xs-5<?php else:?>col-xs-8 col-xs-offset-2<?php endif?>">
 			<div class="inner-content">
 				<?php echo $page->text()->kt()?>
 			</div>
 		</div>
-		<div class="page-navigation col-xs-5 col-xs-offset-4">
-			<?php if($page->prev() != null):?>
-				<a href="<?php echo $page->prev()->url()?>" title="<?php echo $page->prev()->title()?>"><		FORMATION PRÉCÉDENTE</a>
-			<?php endif?>
-			<?php if($page->next() != null):?>
-				<a href="<?php echo $page->next()->url()?>" title="<?php echo $page->next()->title()?>">FORMATION SUIVANTE    ></a>
-			<?php endif?>
-		</div>
+		<?php if(!kirby()->request()->ajax()):?>
+			<div class="page-navigation col-xs-5 col-xs-offset-4">
+				<?php if($page->prev() != null):?>
+					<a href="<?php echo $page->prev()->url()?>" title="<?php echo $page->prev()->title()?>"><		FORMATION PRÉCÉDENTE</a>
+				<?php endif?>
+				<?php if($page->next() != null):?>
+					<a href="<?php echo $page->next()->url()?>" title="<?php echo $page->next()->title()?>">FORMATION SUIVANTE    ></a>
+				<?php endif?>
+			</div>
+		<?php endif?>
 	</div>
 
 	
